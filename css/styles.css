@@ -116,30 +116,24 @@ main {
 
 /* TITULOS GENERALES ------------------------------------- */
 .principalTitle {
-
-
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
 
     text-transform: uppercase;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
 
     display: flex;
     flex-direction: column;
     gap: 1.875rem;
-
-    margin: 2.5rem 0;
+    margin: 2.5rem 0px;
 }
-
 .principalTitle h2 {
-
     font-family: "Shadows Into Light", cursive;
     font-weight: 200;
     font-style: italic;
-    font-size: 36px;
-    text-transform: capitalize;
+    font-size: 40px;
 }
 
 .principalTitleText {
@@ -156,10 +150,13 @@ main {
 .idxTitle {
     margin: 1.25rem;
     color: #F6D330;
+    text-shadow: 0px 0px 30px #F6D330;   
+
 }
 
 .idxTitle h2 {
     color: #52cac9;
+    text-shadow: 0px 0px 30px #52cac9;
 }
 
 
@@ -167,8 +164,7 @@ main {
 
 .plyTitle {
     color: #F6D330;
-    text-shadow: 0px 0px 30px #F6D330;
-    
+    text-shadow: 0px 0px 30px #F6D330;   
 }
 .plyTitle h2 {
     color: #52cac9;
@@ -298,13 +294,11 @@ main {
     width: 70%;
     justify-self: center;
 }
-
 .demListIntro p a {
     text-decoration: underline;
     color: #ff3232;
     transition: 0.5s;
 }
-
 .demListIntro p a:hover {
     color: #f55a5a;
     font-size: 42px;
@@ -318,7 +312,6 @@ main {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-
     text-transform: uppercase;
     text-shadow: 0px 0px 20px #f55a5a;
 
@@ -327,15 +320,14 @@ main {
     gap: 15px;
 
     background-color: #ff575756;
+    position: relative;
 }
-
 .demListTitleBar h2 {
     grid-column: 1/2;
     align-self: center;
     justify-self: center;
     font-size: 4.375rem;
 }
-
 .demListTitleBar h3 {
     grid-column: 2/4;
     align-self: center;
@@ -364,13 +356,10 @@ main {
 }
 
 
-
-
 .demListLevelTags {
     margin: 8%;
     font-size: 1.875rem;
     text-shadow: 0px 0px 30px white;
-
 
     display: grid;
     gap: 2.5rem;
@@ -378,27 +367,22 @@ main {
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
 }
-
 .demListLevelTags article {
-
     border: 8px solid #DD0000;
     background-color: #A02525;
     justify-self: center;
     text-align: center;
 }
-
 .demListLevelTags article iframe {
     width: 320px;
     height: 200px;
     border: 3px solid #3F0000;
 }
-
 .demListLevelTags article img {
     width: 320px;
     height: 200px;
     border: 3px solid #3F0000;
 }
-
 .demListLevelTags h4 {
     text-transform: uppercase;
 
@@ -609,46 +593,30 @@ footer ul {
     display: flex;
     gap: 10px;
 }
-
 footer ul li {
     list-style: none;
 }
-
 footer ul div {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-
 footer ul div li a {
     width: 30px;
     height: 30px;
 }
-
 footer ul div li a img {
     width: 30px;
     height: 30px;
 }
 
 
-
-
-
-
-
 /*  @MEDIAS ------------------------------------------ */
-
-
-
-
 @media (max-width: 1290px) {
-
     /* HEADER -------------------------- */
     .navBar li a {
         font-size: 25px;
     }
-
-
 
     /* DEMONLIST--------------------- */
     .demListLevelTags {
@@ -755,8 +723,7 @@ footer ul div li a img {
         grid-row: 1/2;
         grid-column: 1/2;
 
-        width: 200px;
-        height: 200px;
+        width: 200px;  height: 200px;
     }
 
     .plyPlayerInfo p {
@@ -808,14 +775,12 @@ footer ul div li a img {
     }
 
     .demListLevelTags article iframe {
-        width: 320px;
-        height: 200px;
+        width: 320px;  height: 200px;
         border: 3px solid #3F0000;
     }
 
     .demListLevelTags article img {
-        width: 320px;
-        height: 200px;
+        width: 320px;  height: 200px;
         border: 3px solid #3F0000;
     }
 
@@ -872,13 +837,11 @@ footer ul div li a img {
         padding: 6px;
     }
     header a {
-        width: 70px;
-        height: 70px;
+        width: 70px;  height: 70px;
     }
 
     .navBarLogo {
-        width: 70px;
-        height: 70px;
+        width: 70px;  height: 70px;
     }
 
     .navBar li a {
@@ -954,8 +917,7 @@ footer ul div li a img {
     }
 
     .navBarLogo {
-        width: 60px;
-        height: 60px;
+        width: 60px;   height: 60px;
     }
 
 
@@ -993,13 +955,11 @@ footer ul div li a img {
     }
     .plyPlayerInfo div {
         align-self: flex-end;
-        width: 160px;
-        height: 160px;
+        width: 160px;   height: 160px;
     }
 
     .plyPlayerInfo iframe {
-        width: 280px;
-        height: 160px;
+        width: 280px;   height: 160px;
     }
 
 
@@ -1025,8 +985,7 @@ footer ul div li a img {
     }
 
     .navBarLogo {
-        width: 50px;
-        height: 50px;
+        width: 50px; height: 50px;
     }
     .navBar li a{
         font-size: 18px;
@@ -1044,6 +1003,20 @@ footer ul div li a img {
     .idxTitle h2 {
         font-size: 16px;
     }
+
+        /* PLAYERS ------------ */
+        .plyPlayerInfo p{
+            font-size: 19px;
+        }
+        .plyPlayerInfo div {
+            align-self: flex-end;
+            width: 160px; height: 160px;
+        }
+        .plyPlayerInfo iframe {
+            width: 240px;  height: 140px;
+        }
+
+
     /* PLAY NOW --------- */
     .playNowButtons {
         font-size: 20px;
