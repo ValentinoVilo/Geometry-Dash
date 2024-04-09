@@ -1,0 +1,34 @@
+@import "./utilities/maps";
+@import "./utilities/mixins";
+@import "./utilities/variables";
+
+@import "./base/reset";
+@import "./base/fonts";
+
+@import "./layout/_header";
+@import "./layout/_principalTitles";
+@import "./layout/_main";
+
+@import "./layout/_main-Index";
+@import "./layout/main-AboutMe";
+@import "./layout/main-DemonList";
+@import "./layout/main-Players";
+@import "./layout/main-PlayNow";
+
+@import "./layout/_footer";
+
+/**
+ACA PONGO LOS MEDIAS QUERIES
+**/
+@import "./layout/mediaQ/_HeaderMedia";
+@import "./layout/mediaQ/_MainMedia";
+@import "./layout/mediaQ/_FooterMedia";
+
+@import "./layout/mediaQ/IdxMedia";
+@import "./layout/mediaQ/PlyMedia";
+@import "./layout/mediaQ/DemListMedia";
+@import "./layout/mediaQ/AbtMeMedia";
+@import "./layout/mediaQ/PlayNowMedia";
+
+
+@import "./components/placeholder";

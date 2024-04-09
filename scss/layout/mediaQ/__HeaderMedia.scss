@@ -1,0 +1,59 @@
+@media (max-width: 1290px){
+    .navBar{
+        li{
+            a{
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media (max-width: 812px){
+    header {
+        padding: 6px;
+        a{
+            width: 70px;  height: 70px;
+        }
+    }
+    .navBarLogo {
+        width: 70px;  height: 70px;
+    }
+    .navBar{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 580px){
+    header {
+        border: gray solid 4px;
+        padding: 6px;
+    }
+    .navBar{
+        li{
+            a{
+                font-size: 20px;
+            }
+        }
+    }
+    .navBarLogo {
+        width: 60px;   height: 60px;
+    }
+}
+
+@media (max-width: 425px){
+    header {
+        border: gray solid 3px;
+    }
+    .navBarLogo {
+        width: 50px; height: 50px;
+    }
+    .navBar{
+        li{
+            a{
+                font-size: 18px;
+            }
+        }
+    }
+}

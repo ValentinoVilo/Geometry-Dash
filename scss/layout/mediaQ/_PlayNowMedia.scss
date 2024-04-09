@@ -1,0 +1,41 @@
+@media (max-width: 1290px){
+    .playNowButtons{
+        h2{
+            font-size: 50px;
+        }
+    }
+}
+
+@media (max-width: 1000px){
+    .playNowButtons{
+        h2{
+            font-size: 30px;
+        }
+        a{
+            h1{
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 565px){
+    .playNowButtons{
+        h2{
+            font-size: 22px;
+        }
+        a{
+            h1{
+                font-size: 23px;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px){
+    .playNowButtons{
+        h2{
+            font-size: 20px;
+        }
+    }
+}

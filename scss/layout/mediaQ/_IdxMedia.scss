@@ -1,0 +1,26 @@
+@media (max-width: 812px){
+    .idxTitle {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 565px){
+    .idxTitle {
+        font-size: 25px;
+        h2{
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 425px){
+    .principalTitle {
+        margin: 0px;
+    }
+    .idxTitle {
+        font-size: 18px;
+        h2{
+            font-size: 16px;
+        }
+    }
+}

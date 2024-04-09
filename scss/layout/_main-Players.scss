@@ -1,0 +1,94 @@
+.plyTitle {
+    color: #F6D330;
+    text-shadow: 0px 0px 30px #F6D330;   
+    h2{
+        color: #52cac9;
+        text-shadow: 0px 0px 30px #52cac9;
+    }
+}
+.plyPlayers {
+    display: grid;
+    section{
+        margin-bottom: 75px;
+    }
+    h3{
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+
+        padding: 0 30px;
+        width: 100%;
+        background: linear-gradient(90deg, rgba(255,131,17,1) 0%, rgba(251,164,30,1) 63%, rgba(247,206,46,1) 100%);
+        color: rgb(41, 41, 41);
+        text-shadow: 0px 0px 10px #ffffff;
+    
+    
+        font-size: 60px;
+        text-align: end;
+    }
+}
+.plyPlayerName {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.plyPlayerInfo {
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        width: 250px;
+        height: 250px;
+    }
+    a{
+        display: flex;
+        img{
+            width: 100%;
+            border: 8px solid #F6D330;
+            transition: 0.5s;
+            &:hover{
+                border: 8px solid #52cac9;
+                transition: 0.5s;
+            }
+        }
+    }
+    p{
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+
+        width: 45%;
+        height: 250px;
+        font-size: 30px;
+        padding: 10px;
+        text-align: justify;
+        align-self: center;
+        color: white;
+        overflow: hidden;
+        border: 2px solid white;
+    }
+    iframe{
+        width: 400px;
+        height: 250px;
+    
+        border: 8px solid #F6D330;
+        transition: 0.5s;
+        &:hover{
+            border: 8px solid #52cac9;
+            transition: 0.5s;
+        }
+    }
+}
+
+.plyReverse h3 {
+    grid-column: 2/3;
+    text-align: start;
+    background: linear-gradient(90deg, rgba(247,206,46,1) 0%, rgba(251,164,30,1) 37%, rgba(255,131,17,1) 100%);;
+    .plyPlayerInfo{
+        flex-direction: row-reverse;
+    }
+}
