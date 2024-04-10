@@ -18,7 +18,7 @@
             justify-self: center;
             font-size: 80px;
             width: 100%;
-            background-color: #f6d230c5;
+            background-color: map-get($coloresPlayNow , getnow-background-col);
             border-radius: 20px;
             padding: 0 30px;
         }
@@ -33,7 +33,7 @@
     
         font-size: 3.75rem;
         width: 60%;
-        background-color: #23aeaca8;
+        background-color: map-get($coloresPlayNow , available-background-col);
         border-radius: 20px;
     }
 }

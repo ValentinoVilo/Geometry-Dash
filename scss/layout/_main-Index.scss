@@ -1,9 +1,9 @@
 .idxTitle {
     margin: 1.25rem;
-    color: #F6D330;
-    text-shadow: 0px 0px 30px #F6D330;   
+    color: map-get($coloresIdx, title);
+    text-shadow: 0px 0px 30px map-get($coloresIdx, title-shadow-col);   
     h2{
-        color: #52cac9;
-        text-shadow: 0px 0px 30px #52cac9;
+        color: map-get($coloresIdx, subtitle);
+        text-shadow: 0px 0px 30px map-get($coloresIdx, subtitle-shadow-col);
     }
 }

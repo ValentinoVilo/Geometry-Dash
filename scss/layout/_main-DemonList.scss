@@ -11,9 +11,9 @@
     display: grid;
 
     h2{
-        background-color: #ff575756;
-        text-shadow: 0px 0px 30px #f55a5a;
-        color: #ffffff;
+        background-color: map-get($coloresDemList, lines-backgound-col);
+        text-shadow: 0px 0px 30px map-get($coloresDemList, light-red);
+        color: white;
     }
     p{
         text-align: center;
@@ -23,10 +23,10 @@
         justify-self: center;
         a{
             text-decoration: underline;
-            color: #ff3232;
+            color: map-get($coloresDemList, normal-red);
             transition: 0.5s;
             &:hover{
-                color: #f55a5a;
+                color: map-get($coloresDemList, light-red);
                 font-size: 42px;
                 transition: 0.5s;
             }
@@ -36,8 +36,8 @@
 
 .demListTitleText {
     font-size: 60px;
-    text-shadow: 0px 0px 50px #DD0000;
-    color: #f55a5a;
+    text-shadow: 0px 0px 50px map-get($coloresDemList, strong-red);
+    color: map-get($coloresDemList, normal-red);
 }
 
 .demListTitleBar {
@@ -47,13 +47,13 @@
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
-    text-shadow: 0px 0px 20px #f55a5a;
+    text-shadow: 0px 0px 20px map-get($coloresDemList, light-red);
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 
-    background-color: #ff575756;
+    background-color: map-get($coloresDemList, lines-backgound-col);
     position: relative;
     h2{
         grid-column: 1/2;
@@ -71,8 +71,8 @@
 
 .demListLegend {
     font-size: 35px;
-    color: #F6D330;
-    text-shadow: #F6D330;
+    color: map-get($coloresDemList, legend);
+    text-shadow: 0px 0px 20px map-get($coloresDemList, legend-shadow-col);
 
     grid-column: 1/2;
     position: absolute;
@@ -99,19 +99,14 @@
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
     article{
-        border: 8px solid #DD0000;
-        background-color: #A02525;
+        border: 8px solid map-get($coloresDemList, strong-red);
+        background-color: map-get($coloresDemList, soft-dark-red);
         justify-self: center;
         text-align: center;
         iframe{
             width: 320px;
             height: 200px;
-            border: 3px solid #3F0000;
-        }
-        img{
-            width: 320px;
-            height: 200px;
-            border: 3px solid #3F0000;
+            border: 3px solid map-get($coloresDemList, dark-red);
         }
     }
     h4{

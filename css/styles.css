@@ -119,7 +119,7 @@ main {
     text-shadow: 0px 0px 30px #52cac9; }
 
 .abtMeTitle h1 {
-  text-shadow: 0px 0px 30px #52ca8e; }
+  text-shadow: 0px 0px 70px #52ca8e; }
 
 .abtMeTitle h2 {
   font-size: 3.125rem;
@@ -146,7 +146,7 @@ main {
     text-transform: capitalize; }
     .abtWhy h3:nth-child(2) {
       color: #F6D330;
-      text-shadow: 0px 0px 30px #F6D330;
+      text-shadow: 0px 0px 10px #F6D330;
       font-size: 90px;
       text-decoration: none;
       text-transform: uppercase; }
@@ -162,10 +162,11 @@ main {
     font-weight: 800;
     font-style: normal;
     text-transform: capitalize;
-    text-shadow: 0px 0px 30px #52ca8e;
+    background: linear-gradient(90deg, rgba(50, 126, 88, 0.499037) 0%, rgba(115, 255, 185, 0.510242) 50%, rgba(50, 126, 88, 0.479429) 100%);
     text-transform: none;
     text-align: center;
     font-size: 4.5rem;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.767);
     background-color: #27b66f98; }
 
 .myFavLevels {
@@ -227,7 +228,7 @@ main {
   .demListIntro h2 {
     background-color: #ff575756;
     text-shadow: 0px 0px 30px #f55a5a;
-    color: #ffffff; }
+    color: white; }
   .demListIntro p {
     text-align: center;
     font-size: 2.5rem;
@@ -246,7 +247,7 @@ main {
 .demListTitleText {
   font-size: 60px;
   text-shadow: 0px 0px 50px #DD0000;
-  color: #f55a5a; }
+  color: #ff3232; }
 
 .demListTitleBar {
   padding: 0 10%;
@@ -274,7 +275,7 @@ main {
 .demListLegend {
   font-size: 35px;
   color: #F6D330;
-  text-shadow: #F6D330;
+  text-shadow: 0px 0px 20px #f3e298;
   grid-column: 1/2;
   position: absolute;
   bottom: -20px;
@@ -297,14 +298,10 @@ main {
   align-items: center; }
   .demListLevelTags article {
     border: 8px solid #DD0000;
-    background-color: #A02525;
+    background-color: #7a0a0a;
     justify-self: center;
     text-align: center; }
     .demListLevelTags article iframe {
-      width: 320px;
-      height: 200px;
-      border: 3px solid #3F0000; }
-    .demListLevelTags article img {
       width: 320px;
       height: 200px;
       border: 3px solid #3F0000; }
@@ -330,7 +327,7 @@ main {
     width: 100%;
     background: linear-gradient(90deg, #ff8311 0%, #fba41e 63%, #f7ce2e 100%);
     color: #292929;
-    text-shadow: 0px 0px 10px #ffffff;
+    text-shadow: 0px 0px 10px #7a7a7ada;
     font-size: 60px;
     text-align: end; }
 
@@ -353,7 +350,7 @@ main {
     display: flex; }
     .plyPlayerInfo a img {
       width: 100%;
-      border: 8px solid #F6D330;
+      border: 8px solid #f7ce2e;
       transition: 0.5s; }
       .plyPlayerInfo a img:hover {
         border: 8px solid #52cac9;
@@ -369,13 +366,12 @@ main {
     padding: 10px;
     text-align: justify;
     align-self: center;
-    color: white;
     overflow: hidden;
     border: 2px solid white; }
   .plyPlayerInfo iframe {
     width: 400px;
     height: 250px;
-    border: 8px solid #F6D330;
+    border: 8px solid #f7ce2e;
     transition: 0.5s; }
     .plyPlayerInfo iframe:hover {
       border: 8px solid #52cac9;
