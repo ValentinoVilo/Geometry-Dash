@@ -54,7 +54,7 @@ header{
         font-style: normal;
         text-decoration: none;
         color: white;
-        text-shadow: 0px 0px 20px white;   
+        @include textglow(30px, white);
         text-align: center;
         align-self: center center;
         transition: 0.15s;

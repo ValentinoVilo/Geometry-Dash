@@ -8,3 +8,7 @@
 @mixin abtMeBanners{
     background: linear-gradient(90deg, rgba(50,126,88,0.4990371148459384) 0%, rgba(115,255,185,0.5102415966386555) 50%, rgba(50,126,88,0.47942927170868344) 100%);
 }
+
+@mixin textglow($intensity, $color){
+    text-shadow: 0px 0px $intensity $color ;
+}

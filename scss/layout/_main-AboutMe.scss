@@ -1,6 +1,6 @@
 .abtMeTitle{
     h1{
-        text-shadow: 0px 0px 70px map-get($coloresAbtMe, light-green);
+        @include textglow(70px, map-get($coloresAbtMe, light-green));
     }
     h2{
         font-size: 3.125rem;
@@ -33,7 +33,7 @@
         text-transform: capitalize;
         &:nth-child(2){
             color: map-get($coloresAbtMe, geometryDash-col);
-            text-shadow: 0px 0px 10px map-get($coloresAbtMe, geometryDash-col);
+            @include textglow(10px, map-get($coloresAbtMe, geometryDash-col));
             font-size: 90px;
             text-decoration: none;
             text-transform: uppercase;
@@ -60,7 +60,7 @@
         text-transform: none;
         text-align: center;
         font-size: 4.5rem;
-        text-shadow: 0px 0px 20px map-get($coloresAbtMe, banner-shadow);
+        @include textglow(20px, map-get($coloresAbtMe, banner-shadow));
     
         background-color: #27b66f98;
     }
@@ -95,7 +95,7 @@
 
         margin: 15px 0px;
         color: map-get($coloresAbtMe, light-green);
-        text-shadow: 0px 0px 30px map-get($coloresAbtMe, light-green);
+        @include textglow(30px, map-get($coloresAbtMe, light-green));
     
         justify-self: center;
         font-size: 60px;

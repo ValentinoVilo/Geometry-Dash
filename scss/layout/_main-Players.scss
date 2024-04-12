@@ -1,10 +1,12 @@
 .plyTitle {
     color: map-get($coloresPly, title);
-    text-shadow: 0px 0px 30px map-get($coloresPly, title);   
-    h2{
-        color: map-get($coloresPly, subtitle);
-        text-shadow: 0px 0px 30px map-get($coloresPly, subtitle);
-    }
+    @include textglow(30px,  map-get($coloresPly, title));
+    text-transform: capitalize;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 200;
+    font-style:italic;
+
+    margin: 0 4px;
 }
 .plyPlayers {
     display: grid;
@@ -20,7 +22,7 @@
         width: 100%;
         @include left-gradient;
         color: map-get($coloresPly, playerNames);
-        text-shadow: 0px 0px 10px map-get($coloresPly, playerNames-shadow-col);
+        @include textglow(30px, map-get($coloresPly, playerNames-shadow-col));
         font-size: 60px;
         text-align: end;
     }

@@ -12,7 +12,7 @@
 
     h2{
         background-color: map-get($coloresDemList, lines-backgound-col);
-        text-shadow: 0px 0px 30px map-get($coloresDemList, light-red);
+        @include textglow(30px, map-get($coloresDemList, light-red));
         color: white;
     }
     p{
@@ -36,7 +36,7 @@
 
 .demListTitleText {
     font-size: 60px;
-    text-shadow: 0px 0px 50px map-get($coloresDemList, strong-red);
+    @include textglow(50px, map-get($coloresDemList, strong-red));
     color: map-get($coloresDemList, normal-red);
 }
 
@@ -47,7 +47,7 @@
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
-    text-shadow: 0px 0px 20px map-get($coloresDemList, light-red);
+    @include textglow(20px, map-get($coloresDemList, light-red));
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -72,7 +72,7 @@
 .demListLegend {
     font-size: 35px;
     color: map-get($coloresDemList, legend);
-    text-shadow: 0px 0px 20px map-get($coloresDemList, legend-shadow-col);
+    @include textglow(20px, map-get($coloresDemList, legend-shadow-col));
 
     grid-column: 1/2;
     position: absolute;
@@ -91,7 +91,7 @@
 .demListLevelTags {
     margin: 8%;
     font-size: 1.875rem;
-    text-shadow: 0px 0px 30px white;
+    @include textglow(30px, white);
 
     display: grid;
     gap: 2.5rem;

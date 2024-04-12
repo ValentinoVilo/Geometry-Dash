@@ -14,11 +14,13 @@
     a{
         text-decoration: none;
         color: white;
+        @include textglow(30px, white);
         h1{
             justify-self: center;
             font-size: 80px;
             width: 100%;
             background-color: map-get($coloresPlayNow , getnow-background-col);
+            border: 8px solid  map-get($coloresPlayNow , getnow-border-col);
             border-radius: 20px;
             padding: 0 30px;
         }
@@ -32,8 +34,7 @@
         font-style: normal;
     
         font-size: 3.75rem;
-        width: 60%;
+        width: 100%;
         background-color: map-get($coloresPlayNow , available-background-col);
-        border-radius: 20px;
     }
 }
