@@ -28,6 +28,7 @@
         justify-content: center;
     }
     h3{
+        margin: 10px;
         font-size: 40px;
         text-align: center;
         text-transform: capitalize;
@@ -90,14 +91,14 @@
         font-family: "Bebas Neue", sans-serif;
         font-weight: 800;
         font-style: normal;
+
         text-transform: capitalize;
-
-
         margin: 15px 0px;
         color: map-get($coloresAbtMe, light-green);
         @include textglow(30px, map-get($coloresAbtMe, light-green));
     
         justify-self: center;
+        align-self: center;
         font-size: 60px;
         text-decoration: underline;
     
@@ -105,23 +106,23 @@
         grid-column: 1/2;
     }
     p{
-        margin-top: 15px;
         padding: 12px;
         grid-row: 2/3;
         grid-column: 1/2;
     
         font-size: 28px;
-        overflow: hidden;
+        overflow:scroll;
         border: 2px solid whitesmoke;
         height: 100%
     }
     iframe{
-        margin-top: 15px;
+        margin: 10px;
         border: 8px solid map-get($coloresAbtMe, light-green);
         justify-self: center;
         align-self: flex-end;
         
-        object-fit: contain;
+        width: 600px;
+        height: 360px;
 
         grid-row: 1/3;
         grid-column: 2/3;

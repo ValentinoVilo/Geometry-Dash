@@ -84,11 +84,13 @@
     }
 }
 
-.plyReverse h3 {
-    grid-column: 2/3;
-    text-align: start;
-    @include right-gradient;
+.plyReverse{
     .plyPlayerInfo{
         flex-direction: row-reverse;
+    }
+    h3 {
+        grid-column: 2/3;
+        text-align: start;
+        @include right-gradient;
     }
 }
