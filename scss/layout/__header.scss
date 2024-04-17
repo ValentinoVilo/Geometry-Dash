@@ -65,3 +65,14 @@ header{
         }
     }
 }
+
+.currentPage{
+    img{
+        filter: opacity(80%);
+    }
+    a{
+        color: #545759;
+        text-shadow: none;
+        text-decoration: underline;
+    }
+}

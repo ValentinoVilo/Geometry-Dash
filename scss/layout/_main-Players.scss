@@ -1,19 +1,22 @@
 .plyTitle {
     color: map-get($coloresPly, title);
-    @include textglow(30px,  map-get($coloresPly, title));
+    @include textglow(30px, map-get($coloresPly, title));
     text-transform: capitalize;
     font-family: "Shadows Into Light", cursive;
     font-weight: 200;
-    font-style:italic;
+    font-style: italic;
 
     margin: 0 4px;
 }
+
 .plyPlayers {
     display: grid;
-    section{
+
+    section {
         margin-bottom: 75px;
     }
-    h3{
+
+    h3 {
         font-family: "Bebas Neue", sans-serif;
         font-weight: 600;
         font-style: normal;
@@ -27,11 +30,14 @@
         text-align: end;
     }
 }
+
 .plyPlayerName {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
 }
+
 .plyPlayerInfo {
     padding: 3%;
     display: flex;
@@ -39,23 +45,31 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    div{
+
+    div {
         width: 250px;
         height: 250px;
     }
-    a{
+
+    a {
+        transition: 0.5s;
+        border: 8px solid map-get($coloresPly, color-yellow);
         display: flex;
-        img{
-            width: 100%;
-            border: 8px solid map-get($coloresPly, color-yellow);
+
+        &:hover {
+            border: 8px solid map-get($coloresPly, color-cian);
             transition: 0.5s;
-            &:hover{
-                border: 8px solid map-get($coloresPly, color-cian);
-                transition: 0.5s;
-            }
+            transform: scale(105%);
+        }
+
+        img {
+            overflow: hidden;
+            object-fit: cover;
+            width: 100%;
         }
     }
-    p{
+
+    p {
         font-family: "Orbitron", sans-serif;
         font-optical-sizing: auto;
         font-weight: 400;
@@ -73,38 +87,50 @@
         &::-webkit-scrollbar {
             width: 15px;
         }
+
         &::-webkit-scrollbar-track {
             background: #44444450;
         }
+
         &::-webkit-scrollbar-thumb {
-            background: map-get($coloresPly , color-yellow );
-            border: 3px solid map-get($coloresPly , color-semi-orange);
+            background: map-get($coloresPly , color-cian-midOp);
+            border: 3px solid map-get($coloresPly , color-cian);
             border-radius: 5px;
         }
 
+        border: 2px solid map-get($coloresPly, color-cian);
+        transition: 0.5s;
 
-        border: 2px solid map-get($coloresPly, texts);
+        &:hover {
+            transition: 0.5s;
+            background-color:map-get($coloresPly, color-cian-lowOp);
+        }
     }
-    iframe{
+
+    iframe {
         width: 400px;
         height: 250px;
-    
+
         border: 8px solid map-get($coloresPly, color-yellow);
         transition: 0.5s;
-        &:hover{
+
+        &:hover {
             border: 8px solid map-get($coloresPly, color-cian);
+            transform: scale(105%);
             transition: 0.5s;
         }
     }
 }
 
-.plyReverse{
-    .plyPlayerInfo{
+.plyReverse {
+    .plyPlayerInfo {
         flex-direction: row-reverse;
     }
+
     h3 {
         grid-column: 2/3;
         text-align: start;
         @include right-gradient;
     }
 }
+

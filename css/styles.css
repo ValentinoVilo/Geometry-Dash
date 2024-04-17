@@ -78,6 +78,14 @@ header {
       color: #545759;
       text-shadow: none; }
 
+.currentPage img {
+  filter: opacity(80%); }
+
+.currentPage a {
+  color: #545759;
+  text-shadow: none;
+  text-decoration: underline; }
+
 .principalTitle {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -360,14 +368,17 @@ main {
     width: 250px;
     height: 250px; }
   .plyPlayerInfo a {
+    transition: 0.5s;
+    border: 8px solid #f7ce2e;
     display: flex; }
+    .plyPlayerInfo a:hover {
+      border: 8px solid #52cac9;
+      transition: 0.5s;
+      transform: scale(105%); }
     .plyPlayerInfo a img {
-      width: 100%;
-      border: 8px solid #f7ce2e;
-      transition: 0.5s; }
-      .plyPlayerInfo a img:hover {
-        border: 8px solid #52cac9;
-        transition: 0.5s; }
+      overflow: hidden;
+      object-fit: cover;
+      width: 100%; }
   .plyPlayerInfo p {
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
@@ -380,15 +391,19 @@ main {
     text-align: justify;
     align-self: center;
     overflow-y: scroll;
-    border: 2px solid white; }
+    border: 2px solid #52cac9;
+    transition: 0.5s; }
     .plyPlayerInfo p::-webkit-scrollbar {
       width: 15px; }
     .plyPlayerInfo p::-webkit-scrollbar-track {
       background: #44444450; }
     .plyPlayerInfo p::-webkit-scrollbar-thumb {
-      background: #f7ce2e;
-      border: 3px solid #fba41e;
+      background: #52caca7c;
+      border: 3px solid #52cac9;
       border-radius: 5px; }
+    .plyPlayerInfo p:hover {
+      transition: 0.5s;
+      background-color: #52caca18; }
   .plyPlayerInfo iframe {
     width: 400px;
     height: 250px;
@@ -396,6 +411,7 @@ main {
     transition: 0.5s; }
     .plyPlayerInfo iframe:hover {
       border: 8px solid #52cac9;
+      transform: scale(105%);
       transition: 0.5s; }
 
 .plyReverse .plyPlayerInfo {
