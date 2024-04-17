@@ -68,7 +68,21 @@
         text-align: justify;
         align-self: center;
         color: map-get($coloresPly, text-shadow-col);
-        overflow: hidden;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 15px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #44444450;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: map-get($coloresPly , color-yellow );
+            border: 3px solid map-get($coloresPly , color-semi-orange);
+            border-radius: 5px;
+        }
+
+
         border: 2px solid map-get($coloresPly, texts);
     }
     iframe{

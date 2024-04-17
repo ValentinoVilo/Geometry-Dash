@@ -379,8 +379,16 @@ main {
     padding: 10px;
     text-align: justify;
     align-self: center;
-    overflow: hidden;
+    overflow-y: scroll;
     border: 2px solid white; }
+    .plyPlayerInfo p::-webkit-scrollbar {
+      width: 15px; }
+    .plyPlayerInfo p::-webkit-scrollbar-track {
+      background: #44444450; }
+    .plyPlayerInfo p::-webkit-scrollbar-thumb {
+      background: #f7ce2e;
+      border: 3px solid #fba41e;
+      border-radius: 5px; }
   .plyPlayerInfo iframe {
     width: 400px;
     height: 250px;
@@ -640,7 +648,8 @@ ACA PONGO LOS MEDIAS QUERIES
   .plyPlayerInfo {
     margin-bottom: 50px; }
     .plyPlayerInfo p {
-      font-size: 22px; }
+      font-size: 22px;
+      text-align: center; }
     .plyPlayerInfo div {
       align-self: flex-end;
       width: 160px;
