@@ -205,9 +205,18 @@ main {
     grid-row: 2/3;
     grid-column: 1/2;
     font-size: 28px;
-    overflow: scroll;
+    overflow-y: scroll;
     border: 2px solid whitesmoke;
+    text-align: center;
     height: 100%; }
+    .myFavLevels p::-webkit-scrollbar {
+      width: 15px; }
+    .myFavLevels p::-webkit-scrollbar-track {
+      background: #44444450; }
+    .myFavLevels p::-webkit-scrollbar-thumb {
+      background: #307552;
+      border: 3px solid #52ca8e;
+      border-radius: 5px; }
   .myFavLevels iframe {
     margin: 10px;
     border: 8px solid #52ca8e;

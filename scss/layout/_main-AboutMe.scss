@@ -1,8 +1,9 @@
-.abtMeTitle{
-    h1{
+.abtMeTitle {
+    h1 {
         @include textglow(70px, map-get($coloresAbtMe, light-green));
     }
-    h2{
+
+    h2 {
         font-size: 3.125rem;
         border-top: 6px solid map-get($coloresAbtMe, light-green);
         border-bottom: 6px solid map-get($coloresAbtMe, light-green);
@@ -16,23 +17,26 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    
+
     margin: 2.5rem 0;
 
     display: flex;
     flex-direction: column;
 
     justify-content: center;
-    p{
+
+    p {
         text-align: center;
         justify-content: center;
     }
-    h3{
+
+    h3 {
         margin: 10px;
         font-size: 40px;
         text-align: center;
         text-transform: capitalize;
-        &:nth-child(2){
+
+        &:nth-child(2) {
             color: map-get($coloresAbtMe, geometryDash-col);
             @include textglow(10px, map-get($coloresAbtMe, geometryDash-col));
             font-size: 90px;
@@ -40,8 +44,9 @@
             text-transform: uppercase;
         }
     }
-    article{
-        p{
+
+    article {
+        p {
             text-transform: none;
             font-size: 35px;
             text-align: center;
@@ -51,7 +56,8 @@
 
 .abtMeInfo {
     margin: 5rem 0;
-    h2{
+
+    h2 {
         font-family: "Bebas Neue", sans-serif;
         font-weight: 800;
         font-style: normal;
@@ -62,7 +68,7 @@
         text-align: center;
         font-size: 4.5rem;
         @include textglow(20px, map-get($coloresAbtMe, banner-shadow));
-    
+
         background-color: #27b66f98;
     }
 }
@@ -77,17 +83,20 @@
     font-style: normal;
     display: flex;
     flex-direction: column;
-    div{
+
+    div {
         display: grid;
         padding: 20px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 25% 1fr;
     }
-    h3{
+
+    h3 {
         text-align: center;
         font-size: 50px;
     }
-    h4{
+
+    h4 {
         font-family: "Bebas Neue", sans-serif;
         font-weight: 800;
         font-style: normal;
@@ -96,31 +105,47 @@
         margin: 15px 0px;
         color: map-get($coloresAbtMe, light-green);
         @include textglow(30px, map-get($coloresAbtMe, light-green));
-    
+
         justify-self: center;
         align-self: center;
         font-size: 60px;
         text-decoration: underline;
-    
+
         grid-row: 1/2;
         grid-column: 1/2;
     }
-    p{
+
+    p {
         padding: 12px;
         grid-row: 2/3;
         grid-column: 1/2;
-    
+
         font-size: 28px;
-        overflow:scroll;
+        overflow-y: scroll;       
+
         border: 2px solid whitesmoke;
-        height: 100%
+        text-align: center;
+        height: 100%;
+
+        &::-webkit-scrollbar {
+            width: 15px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #44444450;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: map-get($coloresAbtMe , dark-green);
+            border: 3px solid map-get($coloresAbtMe , light-green);
+            border-radius: 5px;
+        }
     }
-    iframe{
+
+    iframe {
         margin: 10px;
         border: 8px solid map-get($coloresAbtMe, light-green);
         justify-self: center;
         align-self: flex-end;
-        
+
         width: 600px;
         height: 360px;
 
