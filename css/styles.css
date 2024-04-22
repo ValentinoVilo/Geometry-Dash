@@ -458,7 +458,9 @@ ACA PONGO LOS MEDIAS QUERIES
     width: 80px;
     height: 80px; }
   header .navBar ul {
-    padding: 25px; } }
+    padding: 25px; }
+    header .navBar ul li a {
+      font-size: 20px; } }
 
 @media (max-width: 1000px) {
   main {
