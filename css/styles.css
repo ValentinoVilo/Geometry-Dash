@@ -455,8 +455,8 @@ ACA PONGO LOS MEDIAS QUERIES
 
 @media (max-width: 650px) {
   header .navBarLogo {
-    width: 90px;
-    height: 90px; }
+    width: 80px;
+    height: 80px; }
   header .navBar ul {
     padding: 25px; } }
 
@@ -748,7 +748,8 @@ ACA PONGO LOS MEDIAS QUERIES
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 1rem; }
+  padding: 1rem;
+  position: relative; }
 
 nav {
   display: flex;
@@ -846,6 +847,7 @@ label i {
     align-items: center; }
   nav #toggle:checked ~ .navBar {
     height: 130px;
+    padding-top: 17px;
     transition: 0.5s; }
     nav #toggle:checked ~ .navBar li {
       filter: opacity(100%);

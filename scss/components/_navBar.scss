@@ -3,6 +3,8 @@
     max-width: 1000px;
     margin: 0 auto;
     padding: 1rem;
+
+    position: relative;
 }
 
 nav{
@@ -130,6 +132,7 @@ label{
         #toggle:checked ~{
             .navBar{
                 height: 130px;
+                padding-top: 17px;
                 transition: 0.5s;
                 li{
                     filter: opacity(100%);
