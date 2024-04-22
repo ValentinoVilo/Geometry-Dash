@@ -28,63 +28,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  width: 100%;
   padding: 10px; }
-
-.navBarLogo {
-  transition: 0.15s;
-  width: 90px;
-  height: 90px; }
-  .navBarLogo:hover {
-    filter: opacity(80%);
-    transition: 0.15s; }
-  .navBarLogo a {
-    display: flex;
-    width: 100%;
-    height: 100%; }
-    .navBarLogo a img {
-      width: 100%;
-      height: 100%; }
-
-.navBar {
-  align-items: center;
-  padding: 0;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  list-style: none; }
-  .navBar a {
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    text-decoration: none;
-    color: white;
-    text-shadow: 0px 0px 30px white;
-    text-align: center;
-    align-self: center center;
-    transition: 0.15s; }
-    .navBar a:hover {
-      transition: 0.15s;
-      color: #545759;
-      text-shadow: none; }
-
-.currentPage img {
-  filter: opacity(80%); }
-
-.currentPage a {
-  color: #545759;
-  text-shadow: none;
-  text-decoration: underline; }
 
 .principalTitle {
   font-family: "Bebas Neue", sans-serif;
@@ -497,35 +441,24 @@ ACA PONGO LOS MEDIAS QUERIES
 @media (max-width: 812px) {
   header {
     padding: 6px; }
-    header a {
+    header li {
+      display: flex;
+      justify-self: center; }
+    header .navBarLogo {
       width: 70px;
       height: 70px; }
-  .navBarLogo {
-    width: 70px;
-    height: 70px; }
-  .navBar {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr); } }
+    header .navBar ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      row-gap: 15px; } }
 
-@media (max-width: 580px) {
-  header {
-    border: gray solid 4px;
-    padding: 6px; }
-  .navBar li a {
-    font-size: 20px; }
-  .navBarLogo {
-    width: 60px;
-    height: 60px; } }
-
-@media (max-width: 425px) {
-  header {
-    border: gray solid 3px; }
-  .navBarLogo {
-    width: 50px;
-    height: 50px; }
-  .navBar li a {
-    font-size: 18px; } }
+@media (max-width: 650px) {
+  header .navBarLogo {
+    width: 90px;
+    height: 90px; }
+  header .navBar ul {
+    padding: 25px; } }
 
 @media (max-width: 1000px) {
   main {
@@ -810,3 +743,117 @@ ACA PONGO LOS MEDIAS QUERIES
 @media (max-width: 425px) {
   .playNowButtons h2 {
     font-size: 20px; } }
+
+.nav-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem; }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%; }
+
+nav #toggle, nav label {
+  display: none; }
+
+.Orbitron, .navBar a, label i {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal; }
+
+.navBar {
+  align-items: center;
+  padding: 0;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  list-style: none; }
+  .navBar a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 30px white;
+    text-align: center;
+    align-self: center center;
+    transition: 0.15s; }
+    .navBar a:hover {
+      transition: 0.15s;
+      color: #545759;
+      text-shadow: none; }
+  .navBar ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between; }
+
+.navBarLogo {
+  transition: 0.15s;
+  width: 90px;
+  height: 90px; }
+  .navBarLogo:hover {
+    filter: opacity(80%);
+    transition: 0.15s; }
+  .navBarLogo a {
+    display: flex;
+    width: 100%;
+    height: 100%; }
+    .navBarLogo a img {
+      width: 100%;
+      height: 100%; }
+
+.currentPage img {
+  filter: opacity(60%); }
+
+.currentPage a {
+  color: #545759;
+  text-shadow: none;
+  text-decoration: underline; }
+
+label i {
+  width: 100px;
+  height: 70px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-shadow: 0px 0px 30px white; }
+  label i img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s; }
+
+@media (max-width: 650px) {
+  nav .navBar {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 1s; }
+    nav .navBar li {
+      filter: opacity(0%);
+      transition: 0.2s; }
+  nav ul {
+    flex-direction: column;
+    align-items: center; }
+  nav #toggle:checked ~ .navBar {
+    height: 130px;
+    transition: 0.5s; }
+    nav #toggle:checked ~ .navBar li {
+      filter: opacity(100%);
+      transition: 1.6s; }
+  nav #toggle:checked ~ label i {
+    filter: opacity(40%);
+    transition: 0.5s; }
+  nav label {
+    display: inline-flex;
+    color: white;
+    cursor: pointer; } }
