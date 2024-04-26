@@ -35,13 +35,34 @@ $coloresDemList:(
 
 $coloresAbtMe:(
     geometryDash-col: #F6D330,
+    light-green-lowOp:#52ca8e3f,
     light-green:#52ca8e,
     dark-green:#307552,
-    banner-shadow:rgba(255, 255, 255, 0.767)
+    banner-shadow:rgba(255, 255, 255, 0.767),
+    normal-gray:#3d4242,
+    light-gray:rgb(89, 96, 97),
 );
+
+$coloresAbtMeLevels:(
+    kocmoc:#c490ff,
+    kocmocShadow:#8a67f1,
+    kocmocLowOp:#a184f01e,
+    overkill:#ff403d,
+    overkillShadow: #8E060B,
+    overkillLowOp: #8e060b3b,
+    newRecord:#92afff,
+    newRecordShadow:#4879ff,
+    newRecordLowOp:#a9c0fe2a,
+    tectonicTempo:#fd8331,
+    tectonicTempoShadow:#BE2522,
+    tectonicTempoLowOp:#fd833128,
+);
+
+
 
 $coloresPlayNow:(
     getnow-background-col:#ffe055d5,
     getnow-border-col:#ffe369,
     available-background-col:#23aeaca8,
+    available-border-col:#87fffde5,
 );
