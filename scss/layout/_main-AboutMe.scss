@@ -88,7 +88,7 @@
         display: grid;
         padding: 20px;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 25% 1fr;
+        grid-template-rows: 25% 300px;
     }
 
     h3 {
@@ -226,6 +226,26 @@
             p {
                 background-color: map-get($coloresAbtMeLevels, tectonicTempoLowOp);
                 border-color: map-get($coloresAbtMeLevels, tectonicTempo);
+            }
+        }
+    }
+
+    .tidalWave {
+        transition: 0.5s;
+
+        &:hover {
+            h4 {
+                color: map-get($coloresAbtMeLevels, tidalWave);
+                @include textglow(30px, map-get($coloresAbtMeLevels, tidalWaveShadow));
+            }
+
+            iframe {
+                border-color: map-get($coloresAbtMeLevels, tidalWave);
+            }
+
+            p {
+                background-color: map-get($coloresAbtMeLevels, tidalWaveLowOp);
+                border-color: map-get($coloresAbtMeLevels, tidalWaveBorder);
             }
         }
     }

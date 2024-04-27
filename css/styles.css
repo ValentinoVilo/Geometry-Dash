@@ -134,7 +134,7 @@ main {
     display: grid;
     padding: 20px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 25% 1fr; }
+    grid-template-rows: 25% 300px; }
   .myFavLevels h3 {
     text-align: center;
     font-size: 50px; }
@@ -219,6 +219,16 @@ main {
     .myFavLevels .tectonicTempo:hover p {
       background-color: #fd833128;
       border-color: #fd8331; }
+  .myFavLevels .tidalWave {
+    transition: 0.5s; }
+    .myFavLevels .tidalWave:hover h4 {
+      color: #FFF3A9;
+      text-shadow: 0px 0px 30px #FEF6D5; }
+    .myFavLevels .tidalWave:hover iframe {
+      border-color: #FFF3A9; }
+    .myFavLevels .tidalWave:hover p {
+      background-color: #57d4d433;
+      border-color: #57D4D4; }
   .myFavLevels iframe {
     margin: 10px;
     border: 8px solid #52ca8e;
@@ -313,7 +323,7 @@ main {
   font-style: normal; }
 
 .demListLevelTags {
-  margin: 8%;
+  margin: 150px;
   font-size: 25px;
   text-shadow: 0px 0px 30px white;
   display: grid;
@@ -328,8 +338,8 @@ main {
     justify-self: center;
     text-align: center; }
     .demListLevelTags article iframe {
-      width: 320px;
-      height: 200px;
+      width: 360px;
+      height: 220px;
       border: 3px solid #3F0000; }
     .demListLevelTags article:hover {
       filter: drop-shadow(0 0 30px #7a0a0a);
@@ -730,6 +740,47 @@ ACA PONGO LOS MEDIAS QUERIES
     .plyPlayerInfo iframe {
       width: 280px;
       height: 180px; } }
+
+@media (max-width: 1520px) {
+  .demListLevelTags {
+    margin: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; } }
+
+@media (max-width: 950px) {
+  .demListTitleText {
+    font-size: 40px; }
+  .demListTitleBar h2 {
+    font-size: 40px; }
+  .demListTitleBar h3 {
+    font-size: 30px; }
+  .demListTitleBar p {
+    font-size: 30px;
+    transform: translateY(-10px); }
+  .demListIntro {
+    font-size: 20px; }
+    .demListIntro p {
+      font-size: 30px; }
+  .demListLevelTags {
+    margin: 50px; }
+    .demListLevelTags article iframe {
+      width: 280px;
+      height: 180px; } }
+
+@media (max-width: 770px) {
+  .demListTitleText {
+    font-size: 25px; }
+  .demListTitleBar h2 {
+    font-size: 33px; }
+  .demListTitleBar h3 {
+    font-size: 25px; }
+  .demListTitleBar p {
+    font-size: 25px;
+    transform: translateY(-10px); }
+  .demListLevelTags article iframe {
+    width: 400px;
+    height: 210px; } }
 
 @media (min-width: 1700px) {
   .myFavLevels p {

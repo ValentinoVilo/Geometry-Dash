@@ -99,7 +99,7 @@
 }
 
 .demListLevelTags {
-    margin: 8%;
+    margin: 150px;
     font-size: 25px;
     @include textglow(30px, white);
 
@@ -116,8 +116,8 @@
         justify-self: center;
         text-align: center;
         iframe{
-            width: 320px;
-            height: 200px;
+            width: 360px;
+            height: 220px;
             border: 3px solid map-get($coloresDemList, dark-red);
         }
 

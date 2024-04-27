@@ -1,0 +1,65 @@
+@media (max-width:1520px) {
+    .demListLevelTags {
+        margin: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width:950px) {
+    .demListTitleText {
+        font-size: 40px;
+    }
+    .demListTitleBar{
+        h2{
+            font-size: 40px;
+        }
+        h3{
+            font-size: 30px;
+        }
+        p{
+            font-size: 30px;
+            transform: translateY(-10px);
+        }
+    }
+    .demListIntro{
+        font-size: 20px;
+        p{
+            font-size: 30px;
+        }
+    }
+    .demListLevelTags {
+        margin: 50px;
+        article{
+            iframe{
+                width: 280px; height: 180px;
+            }
+        }
+    }
+}
+@media (max-width:770px) {
+    .demListTitleText {
+        font-size: 25px;
+    }
+    .demListTitleBar{
+        h2{
+            font-size: 33px;
+        }
+        h3{
+            font-size: 25px;
+        }
+        p{
+            font-size: 25px;
+            transform: translateY(-10px);
+        }
+    }
+    .demListLevelTags {
+        article{
+            iframe{
+                width: 400px;
+                height: 210px;
+            }
+        }
+    }
+}
