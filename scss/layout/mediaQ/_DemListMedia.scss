@@ -63,3 +63,27 @@
         }
     }
 }
+@media (max-width:500px) {
+    .demListTitleText {
+        font-size: 25px;
+    }
+    .demListTitleBar{
+        h2{
+            font-size: 28px;
+        }
+        h3{
+            font-size: 22px;
+        }
+        p{
+            font-size: 20px;
+            transform: translateY(-20px);
+        }
+    }
+    .demListLevelTags {
+        article{
+            iframe{
+                width: 260px; height: 160px;
+            }
+        }
+    }
+}

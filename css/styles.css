@@ -306,6 +306,8 @@ main {
   .demListTitleBar:hover {
     border-color: #f55a5a;
     transition: 0.5s; }
+  .demListTitleBar p {
+    width: 400px; }
 
 .demListLegend {
   font-size: 35px;
@@ -739,7 +741,9 @@ ACA PONGO LOS MEDIAS QUERIES
       height: 160px; }
     .plyPlayerInfo iframe {
       width: 280px;
-      height: 180px; } }
+      height: 180px; }
+  .demListExtraInfo {
+    display: none; } }
 
 @media (max-width: 1520px) {
   .demListLevelTags {
@@ -781,6 +785,20 @@ ACA PONGO LOS MEDIAS QUERIES
   .demListLevelTags article iframe {
     width: 400px;
     height: 210px; } }
+
+@media (max-width: 500px) {
+  .demListTitleText {
+    font-size: 25px; }
+  .demListTitleBar h2 {
+    font-size: 28px; }
+  .demListTitleBar h3 {
+    font-size: 22px; }
+  .demListTitleBar p {
+    font-size: 20px;
+    transform: translateY(-20px); }
+  .demListLevelTags article iframe {
+    width: 260px;
+    height: 160px; } }
 
 @media (min-width: 1700px) {
   .myFavLevels p {

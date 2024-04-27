@@ -77,6 +77,9 @@
         border-color: map-get($coloresDemList, light-red);
         transition: 0.5s;
     }
+    p{
+        width: 400px;
+    }
 }
 
 .demListLegend {
