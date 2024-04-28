@@ -1,9 +1,27 @@
 .idxTitle {
-    margin: 1.25rem;
     color: map-get($coloresIdx, title);
-    @include textglow (30px, map-get($coloresIdx, title-shadow-col));   
-    h2{
+    @include textglow (30px, map-get($coloresIdx, title-shadow-col));
+
+    animation-name: beatingButton;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+
+    h2 {
         color: map-get($coloresIdx, subtitle);
         @include textglow (30px, map-get($coloresIdx, subtitle-shadow-col));
+    }
+}
+
+@keyframes beatingButton {
+    0% {
+    }
+
+    50% {
+        transform: scale(105%);
+    }
+
+    100% {
+        transform: scale(100%);
     }
 }

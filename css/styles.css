@@ -47,10 +47,8 @@ header {
     font-style: italic;
     font-size: 40px; }
   .principalTitle img {
-    width: 100%; }
-
-.principalTitleText {
-  margin: 1.25rem; }
+    width: 100%;
+    margin: 0; }
 
 main {
   padding: 5rem 0;
@@ -63,12 +61,22 @@ main {
   background-repeat: no-repeat; }
 
 .idxTitle {
-  margin: 1.25rem;
   color: #F6D330;
-  text-shadow: 0px 0px 30px #F6D330; }
+  text-shadow: 0px 0px 30px #F6D330;
+  animation-name: beatingButton;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s; }
   .idxTitle h2 {
     color: #52cac9;
     text-shadow: 0px 0px 30px #52cac9; }
+
+@keyframes beatingButton {
+  0% { }
+  50% {
+    transform: scale(105%); }
+  100% {
+    transform: scale(100%); } }
 
 .abtMeTitle h1 {
   text-shadow: 0px 0px 70px #52ca8e; }
